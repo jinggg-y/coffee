@@ -1,54 +1,38 @@
-# CodeIgniter 4 Framework
+# Individual Project - Online learning platform 
 
-## What is CodeIgniter?
+## Coffee sensation
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+Coffee Sensation is an online learning system for coffee lovers that brings the community to share 
+knowledge of coffee from different aspects, including coffee origins, coffee beans processing, 
+brewing techniques, and latte art showcasing. Coffee Sensation delivers engaging experiences for 
+both educators and learners. Educators can start a course and upload learning content, and students 
+can enrol in a course and view and download learning materials. Coffee Sensation provides upskilling 
+opportunities for coffee enthusiasts, from beginners to experts.
 
-This repository holds the distributable version of the framework.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+## MVC design
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+This project is to deliver an MVP for Coffee Sensation. The web app will be based on the Model, View, Controller (MVC) design, 
+where CodeIgniter is selected as the MVC template.
 
-The user guide corresponding to the latest version of the framework can be found
-[here](https://codeigniter4.github.io/userguide/).
+- Model: A relational database to store all the data, including user information and course 
+materials. The database will be managed by MySQL.
+- View: The website front end will be built in HTML, CSS, and JavaScript, where Bootstrap will 
+be utilised for a modern and consistent UI design.
+- Controller: Users will be able to submit data input, upload and download files and interact 
+with the system via the functions that have been created in the CodeIgniter controller. 
+As the target users are coffee educators and learners from all levels, the web app will have the 
+feature of role management and user access control. Besides that, to satisfy users’ learning 
+experience, Coffee Sensation has the feature of file upload and download, certificate generation, 
+and content search
 
-## Important Change with index.php
+## Front-end
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+HTML, CSS, Bootstrap, JavaScript
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+## Back-end
 
-**Please** read the user guide for a better explanation of how CI4 works!
+PHP, SQL, AJAX
 
-## Repository Management
+## User story map
 
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
-
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
-
-## Contributing
-
-We welcome contributions from the community.
-
-Please read the [*Contributing to CodeIgniter*](https://github.com/codeigniter4/CodeIgniter4/blob/develop/CONTRIBUTING.md) section in the development repository.
-
-## Server Requirements
-
-PHP version 7.4 or higher is required, with the following extensions installed:
-
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
-
-Additionally, make sure that the following extensions are enabled in your PHP:
-
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+![user stoy map](https://github.com/jinggg-y/coffee/assets/62837203/ce1da85a-3017-492b-9a37-907f0671bf7f)
