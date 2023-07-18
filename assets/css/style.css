@@ -1,0 +1,112 @@
+/* 332B29 
+7B4717
+EBE2D7
+FFFFF2*/
+
+h1 {
+    color: #7B4717 !important;
+}
+
+.bg-dark {
+    background-color: #332B29!important;
+}
+
+.content-wrapper{
+    min-height: 80vh;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+button {
+    border: none;
+    background: none;
+}
+
+.btn {
+    border-radius: 3px;
+}
+
+.btn-primary {
+    background-color: #7B4717;
+    border-color: #7B4717;
+    border-radius: 3px;
+}
+
+.btn-primary:hover {
+    background-color: #6b3909;
+    border-color: #6b3909;
+}
+
+.btn-primary:active {
+    background-color: #7B4717 !important;
+    border-color: #7B4717 !important;
+}
+
+.btn-outline-dark {
+    border-color: #7B4717;
+    color: #7B4717;
+    background-color: none; 
+}
+
+.btn-primary:hover {
+    background-color: #6b3909;
+    border-color: #6b3909;
+}
+
+/*-----------------------------navbar------------------------------------*/
+nav {
+    padding: 20px 0;
+}
+
+.navbar-brand {
+    margin: 0;
+    padding: 0 20px;
+    font-family: 'Bebas Neue', cursive;
+    color: #332B29;
+}
+
+#searchbar {
+    border: 1px solid #332B29;
+    border-radius: 2px;
+}
+
+#searchbar input {
+    border: none;
+    width: 25vw;
+}
+
+#searchbar input:focus {
+    box-shadow: none;
+}
+
+#profileDropdown::after {
+    display: none;
+}
+/* ---------course-card----------- */
+#course-card:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 0px #332b291a;
+}
+/*  */
+.nav-link {
+    color: #332B29 !important;
+}
+
+.nav-underline .nav-link.active, .nav-underline .show>.nav-link {
+    color: #7B4717 !important;
+}
+/* rating star */
+.bi-star-fill.hover {
+    color: #7B4717 !important;
+}
+
+.bi-star-fill.selected {
+    color: #7B4717 !important;
+}
+
+footer {
+    background-color: #332B29;
+    color: #FFFFF2;
+}

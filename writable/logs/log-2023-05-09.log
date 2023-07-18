@@ -1,0 +1,42 @@
+CRITICAL - 2023-05-09 22:02:11 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: "\App\Controllers\teach/teach_item_index/$1"
+in SYSTEMPATH/Router/Router.php on line 474.
+ 1 SYSTEMPATH/Router/Router.php(474): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName()
+ 2 SYSTEMPATH/Router/Router.php(182): CodeIgniter\Router\Router->checkRoutes()
+ 3 SYSTEMPATH/CodeIgniter.php(815): CodeIgniter\Router\Router->handle()
+ 4 SYSTEMPATH/CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-09 22:02:33 --> A dynamic controller is not allowed for security reasons. Route handler: "\App\Controllers\teach\teach_item_index\$1"
+in SYSTEMPATH/Router/Router.php on line 480.
+ 1 SYSTEMPATH/Router/Router.php(480): CodeIgniter\Router\Exceptions\RouterException::forDynamicController()
+ 2 SYSTEMPATH/Router/Router.php(182): CodeIgniter\Router\Router->checkRoutes()
+ 3 SYSTEMPATH/CodeIgniter.php(815): CodeIgniter\Router\Router->handle()
+ 4 SYSTEMPATH/CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-09 22:03:29 --> A dynamic controller is not allowed for security reasons. Route handler: "\App\Controllers\Teach\teach_item_index\$1"
+in SYSTEMPATH/Router/Router.php on line 480.
+ 1 SYSTEMPATH/Router/Router.php(480): CodeIgniter\Router\Exceptions\RouterException::forDynamicController()
+ 2 SYSTEMPATH/Router/Router.php(182): CodeIgniter\Router\Router->checkRoutes()
+ 3 SYSTEMPATH/CodeIgniter.php(815): CodeIgniter\Router\Router->handle()
+ 4 SYSTEMPATH/CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-09 22:08:02 --> Array to string conversion
+in APPPATH/Controllers/Teach.php on line 81.
+ 1 APPPATH/Controllers/Teach.php(81): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Teach->teach_item_index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-09 22:22:04 --> Undefined variable $data
+in APPPATH/Views/content.php on line 10.
+ 1 APPPATH/Views/content.php(10): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/content.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Teach.php(87): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Teach->teach_item_index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

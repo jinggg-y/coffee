@@ -1,0 +1,219 @@
+CRITICAL - 2023-04-20 04:25:19 --> Undefined variable $password
+in APPPATH/Models/UserModel.php on line 33.
+ 1 APPPATH/Models/UserModel.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Login.php(41): App\Models\UserModel->getUser()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->checklogin()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-20 04:26:38 --> Too few arguments to function App\Models\UserModel::getUser(), 1 passed in /var/www/htdocs/coffee/app/Controllers/Login.php on line 41 and exactly 2 expected
+in APPPATH/Models/UserModel.php on line 32.
+ 1 APPPATH/Controllers/Login.php(41): App\Models\UserModel->getUser()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->checklogin()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-20 04:35:54 --> Undefined array key "email"
+in APPPATH/Controllers/Signup.php on line 25.
+ 1 APPPATH/Controllers/Signup.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Signup->register()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-20 04:36:23 --> Undefined array key "email"
+in APPPATH/Controllers/Signup.php on line 25.
+ 1 APPPATH/Controllers/Signup.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Signup->register()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-20 06:07:17 --> Undefined variable $data
+in APPPATH/Controllers/Logout.php on line 21.
+ 1 APPPATH/Controllers/Logout.php(21): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Logout->logout()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-20 06:39:22 --> Undefined property: App\Controllers\Profile::$session
+in APPPATH/Controllers/Profile.php on line 14.
+ 1 APPPATH/Controllers/Profile.php(14): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Profile->profile()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-20 12:38:23 --> mysqli_sql_exception: Duplicate entry '0' for key 'users.PRIMARY' in /var/www/htdocs/coffee/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/coffee/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/coffee/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/coffee/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/coffee/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/coffee/app/Models/UserModel.php(28): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/htdocs/coffee/app/Controllers/Signup.php(44): App\Models\UserModel->createUser()
+#6 /var/www/htdocs/coffee/system/CodeIgniter.php(934): App\Controllers\Signup->register()
+#7 /var/www/htdocs/coffee/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/htdocs/coffee/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/htdocs/coffee/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-20 12:38:23 --> Duplicate entry '0' for key 'users.PRIMARY'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/UserModel.php(28): CodeIgniter\Database\BaseBuilder->insert()
+ 3 APPPATH/Controllers/Signup.php(44): App\Models\UserModel->createUser()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Signup->register()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-20 12:40:09 --> mysqli_sql_exception: Duplicate entry '0' for key 'users.PRIMARY' in /var/www/htdocs/coffee/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/coffee/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/coffee/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/coffee/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/coffee/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/coffee/app/Models/UserModel.php(28): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/htdocs/coffee/app/Controllers/Signup.php(44): App\Models\UserModel->createUser()
+#6 /var/www/htdocs/coffee/system/CodeIgniter.php(934): App\Controllers\Signup->register()
+#7 /var/www/htdocs/coffee/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/htdocs/coffee/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/htdocs/coffee/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-20 12:40:09 --> Duplicate entry '0' for key 'users.PRIMARY'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/UserModel.php(28): CodeIgniter\Database\BaseBuilder->insert()
+ 3 APPPATH/Controllers/Signup.php(44): App\Models\UserModel->createUser()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Signup->register()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-20 12:40:38 --> mysqli_sql_exception: Duplicate entry '0' for key 'users.PRIMARY' in /var/www/htdocs/coffee/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/coffee/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/coffee/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/coffee/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/coffee/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/coffee/app/Models/UserModel.php(28): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/htdocs/coffee/app/Controllers/Signup.php(44): App\Models\UserModel->createUser()
+#6 /var/www/htdocs/coffee/system/CodeIgniter.php(934): App\Controllers\Signup->register()
+#7 /var/www/htdocs/coffee/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/htdocs/coffee/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/htdocs/coffee/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-20 12:40:38 --> Duplicate entry '0' for key 'users.PRIMARY'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/UserModel.php(28): CodeIgniter\Database\BaseBuilder->insert()
+ 3 APPPATH/Controllers/Signup.php(44): App\Models\UserModel->createUser()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Signup->register()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-20 12:59:56 --> mysqli_sql_exception: Duplicate entry '0' for key 'users.PRIMARY' in /var/www/htdocs/coffee/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/coffee/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/coffee/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/coffee/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/coffee/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/coffee/app/Models/UserModel.php(28): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/htdocs/coffee/app/Controllers/Signup.php(46): App\Models\UserModel->createUser()
+#6 /var/www/htdocs/coffee/system/CodeIgniter.php(934): App\Controllers\Signup->register()
+#7 /var/www/htdocs/coffee/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/htdocs/coffee/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/htdocs/coffee/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-20 12:59:56 --> Duplicate entry '0' for key 'users.PRIMARY'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/UserModel.php(28): CodeIgniter\Database\BaseBuilder->insert()
+ 3 APPPATH/Controllers/Signup.php(46): App\Models\UserModel->createUser()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Signup->register()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-20 13:06:36 --> mysqli_sql_exception: Duplicate entry '0' for key 'users.PRIMARY' in /var/www/htdocs/coffee/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/coffee/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/coffee/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/coffee/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/coffee/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/coffee/app/Models/UserModel.php(28): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/htdocs/coffee/app/Controllers/Signup.php(46): App\Models\UserModel->createUser()
+#6 /var/www/htdocs/coffee/system/CodeIgniter.php(934): App\Controllers\Signup->register()
+#7 /var/www/htdocs/coffee/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/htdocs/coffee/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/htdocs/coffee/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-20 13:06:36 --> Duplicate entry '0' for key 'users.PRIMARY'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/UserModel.php(28): CodeIgniter\Database\BaseBuilder->insert()
+ 3 APPPATH/Controllers/Signup.php(46): App\Models\UserModel->createUser()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Signup->register()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-20 13:06:52 --> mysqli_sql_exception: Duplicate entry '0' for key 'users.PRIMARY' in /var/www/htdocs/coffee/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/coffee/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/coffee/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/coffee/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/coffee/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/coffee/app/Models/UserModel.php(28): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/htdocs/coffee/app/Controllers/Signup.php(46): App\Models\UserModel->createUser()
+#6 /var/www/htdocs/coffee/system/CodeIgniter.php(934): App\Controllers\Signup->register()
+#7 /var/www/htdocs/coffee/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/htdocs/coffee/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/htdocs/coffee/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-20 13:06:52 --> Duplicate entry '0' for key 'users.PRIMARY'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/UserModel.php(28): CodeIgniter\Database\BaseBuilder->insert()
+ 3 APPPATH/Controllers/Signup.php(46): App\Models\UserModel->createUser()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Signup->register()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-20 13:07:31 --> mysqli_sql_exception: Duplicate entry '0' for key 'users.PRIMARY' in /var/www/htdocs/coffee/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/coffee/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/coffee/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/coffee/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/coffee/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/coffee/app/Models/UserModel.php(30): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/htdocs/coffee/app/Controllers/Signup.php(46): App\Models\UserModel->createUser()
+#6 /var/www/htdocs/coffee/system/CodeIgniter.php(934): App\Controllers\Signup->register()
+#7 /var/www/htdocs/coffee/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/htdocs/coffee/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/htdocs/coffee/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-20 13:07:31 --> Duplicate entry '0' for key 'users.PRIMARY'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/UserModel.php(30): CodeIgniter\Database\BaseBuilder->insert()
+ 3 APPPATH/Controllers/Signup.php(46): App\Models\UserModel->createUser()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Signup->register()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-20 13:07:48 --> mysqli_sql_exception: Duplicate entry '0' for key 'users.PRIMARY' in /var/www/htdocs/coffee/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/coffee/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/coffee/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/coffee/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/coffee/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/coffee/app/Models/UserModel.php(30): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/htdocs/coffee/app/Controllers/Signup.php(46): App\Models\UserModel->createUser()
+#6 /var/www/htdocs/coffee/system/CodeIgniter.php(934): App\Controllers\Signup->register()
+#7 /var/www/htdocs/coffee/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/htdocs/coffee/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/htdocs/coffee/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-20 13:07:48 --> Duplicate entry '0' for key 'users.PRIMARY'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/UserModel.php(30): CodeIgniter\Database\BaseBuilder->insert()
+ 3 APPPATH/Controllers/Signup.php(46): App\Models\UserModel->createUser()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Signup->register()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

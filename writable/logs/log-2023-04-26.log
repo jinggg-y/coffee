@@ -1,0 +1,302 @@
+CRITICAL - 2023-04-26 01:35:44 --> Undefined variable $userId
+in APPPATH/Models/CourseModel.php on line 43.
+ 1 APPPATH/Models/CourseModel.php(43): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Teach.php(13): App\Models\CourseModel->getTeaching()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Teach->index()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-26 01:36:00 --> CodeIgniter\Database\BaseBuilder::get(): Argument #1 ($limit) must be of type ?int, string given, called in /var/www/htdocs/coffee/app/Models/CourseModel.php on line 44
+in SYSTEMPATH/Database/BaseBuilder.php on line 1608.
+ 1 APPPATH/Models/CourseModel.php(44): CodeIgniter\Database\BaseBuilder->get()
+ 2 APPPATH/Controllers/Teach.php(13): App\Models\CourseModel->getTeaching()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Teach->index()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-26 01:36:30 --> Attempt to read property "img" on array
+in APPPATH/Views/teach.php on line 14.
+ 1 APPPATH/Views/teach.php(14): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/teach.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Teach.php(17): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Teach->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-26 01:37:45 --> Attempt to read property "coursename" on array
+in APPPATH/Views/teach.php on line 16.
+ 1 APPPATH/Views/teach.php(16): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/teach.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Teach.php(17): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Teach->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-26 04:25:50 --> Cannot call constructor
+in APPPATH/Controllers/EmailController.php on line 14.
+ 1 APPPATH/Controllers/Signup.php(34): App\Controllers\EmailController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Signup->register()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-26 04:27:02 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:141A318A:SSL routines:tls_process_ske_dhe:dh key too small in /var/www/htdocs/coffee/system/Email/Email.php:1883
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/htdocs/coffee/system/Email/Email.php(1883): stream_socket_enable_crypto()
+#2 /var/www/htdocs/coffee/system/Email/Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 /var/www/htdocs/coffee/system/Email/Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /var/www/htdocs/coffee/system/Email/Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 /var/www/htdocs/coffee/app/Controllers/EmailController.php(35): CodeIgniter\Email\Email->send()
+#6 /var/www/htdocs/coffee/app/Controllers/Signup.php(50): App\Controllers\EmailController->sendVerification()
+#7 /var/www/htdocs/coffee/system/CodeIgniter.php(934): App\Controllers\Signup->register()
+#8 /var/www/htdocs/coffee/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/htdocs/coffee/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/htdocs/coffee/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-04-26 04:27:02 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-26 04:27:02 --> 220 mailhub.eait.uq.edu.au ESMTP Sendmail 8.15.1/8.15.1; Wed, 26 Apr 2023 14:27:02 +1000 (AEST)
+
+hello: 250-mailhub.eait.uq.edu.au Hello infs3202-d1804afb.zones.eait.uq.edu.au [172.23.81.53], pleased to meet you
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-8BITMIME
+250-SIZE 67108864
+250-DSN
+250-ETRN
+250-STARTTLS
+250-DELIVERBY
+250 HELP
+
+starttls: 220 2.0.0 Ready to start TLS
+
+CRITICAL - 2023-04-26 04:27:02 --> Error sending email: 220 mailhub.eait.uq.edu.au ESMTP Sendmail 8.15.1/8.15.1; Wed, 26 Apr 2023 14:27:02 +1000 (AEST)
+<br><pre>hello: 250-mailhub.eait.uq.edu.au Hello infs3202-d1804afb.zones.eait.uq.edu.au [172.23.81.53], pleased to meet you
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-8BITMIME
+250-SIZE 67108864
+250-DSN
+250-ETRN
+250-STARTTLS
+250-DELIVERBY
+250 HELP
+</pre><pre>starttls: 220 2.0.0 Ready to start TLS
+</pre>Unable to send email using SMTP. Your server might not be configured to send mail using this method.<br><pre>Date: Wed, 26 Apr 2023 04:27:02 +0000
+From: &quot;Coffee Sensation&quot; &lt;jing.yang3@uqconnect.edu.au&gt;
+Return-Path: &lt;jing.yang3@uqconnect.edu.au&gt;
+To: yangjing221@hotmail.com
+Subject: =?UTF-8?Q?Verify=20Email?=
+Reply-To: &lt;jing.yang3@uqconnect.edu.au&gt;
+User-Agent: CodeIgniter
+X-Sender: jing.yang3@uqconnect.edu.au
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;6448a81601cc69.47978924@uqconnect.edu.au&gt;
+Mime-Version: 1.0
+
+
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Thank you for signing up. Please click the link below to verify your email:
+
+https://infs3202-d1804afb.uqcloud.net/coffee/verify-email?token=ea67afbf3b423493d1e2639ae17d049aa2a79165726e5579a59afad4faad8904
+</pre>
+in APPPATH/Controllers/EmailController.php on line 36.
+ 1 APPPATH/Controllers/Signup.php(50): App\Controllers\EmailController->sendVerification()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Signup->register()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-26 04:31:59 --> Email: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.
+ERROR - 2023-04-26 04:31:59 --> 
+CRITICAL - 2023-04-26 04:31:59 --> Undefined property: App\Controllers\EmailController::$email
+in APPPATH/Controllers/EmailController.php on line 28.
+ 1 APPPATH/Controllers/EmailController.php(28): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Signup.php(50): App\Controllers\EmailController->sendVerification()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Signup->register()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-26 04:32:10 --> Email: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.
+ERROR - 2023-04-26 04:32:10 --> 
+CRITICAL - 2023-04-26 04:32:10 --> Undefined property: App\Controllers\EmailController::$email
+in APPPATH/Controllers/EmailController.php on line 28.
+ 1 APPPATH/Controllers/EmailController.php(28): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Signup.php(50): App\Controllers\EmailController->sendVerification()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Signup->register()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-26 04:32:30 --> Email: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.
+ERROR - 2023-04-26 04:32:30 --> 
+CRITICAL - 2023-04-26 04:32:30 --> Error sending email: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br><pre>Date: Wed, 26 Apr 2023 04:32:30 +0000
+From: &quot;Coffee Sensation&quot; &lt;jing.yang3@uqconnect.edu.au&gt;
+Return-Path: &lt;jing.yang3@uqconnect.edu.au&gt;
+Reply-To: &lt;jing.yang3@uqconnect.edu.au&gt;
+User-Agent: CodeIgniter
+X-Sender: jing.yang3@uqconnect.edu.au
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;6448a95ed98dd5.10318851@uqconnect.edu.au&gt;
+Mime-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+=?UTF-8?Q?Verify=20Email?=
+Thank you for signing up. Please click the link below to verify your email:
+
+https://infs3202-d1804afb.uqcloud.net/coffee/verify-email?token=88d801eb4f614d0aa40f97f983fc16197222ef6f4571707de30a9ef4941ff77f
+</pre>
+in APPPATH/Controllers/EmailController.php on line 28.
+ 1 APPPATH/Controllers/Signup.php(50): App\Controllers\EmailController->sendVerification()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Signup->register()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-26 04:37:09 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-26 04:37:09 --> 220 mailhub.eait.uq.edu.au ESMTP Sendmail 8.15.1/8.15.1; Wed, 26 Apr 2023 14:37:04 +1000 (AEST)
+
+hello: 250-mailhub.eait.uq.edu.au Hello infs3202-d1804afb.zones.eait.uq.edu.au [172.23.81.53], pleased to meet you
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-8BITMIME
+250-SIZE 67108864
+250-DSN
+250-ETRN
+250-STARTTLS
+250-DELIVERBY
+250 HELP
+
+from: 250 2.1.0 <jing.yang3@uqconnect.edu.au>... Sender ok
+
+to: 250 2.1.5 <yangjing221@hotmail.com>... Recipient ok
+
+data: 354 Enter mail, end with "." on a line by itself
+
+
+quit: 250 2.0.0 33Q4b4wv006121 Message accepted for delivery
+
+The following SMTP error was encountered: 250 2.0.0 33Q4b4wv006121 Message accepted for delivery
+
+The following SMTP error was encountered: 
+CRITICAL - 2023-04-26 04:37:09 --> Error sending email: 220 mailhub.eait.uq.edu.au ESMTP Sendmail 8.15.1/8.15.1; Wed, 26 Apr 2023 14:37:04 +1000 (AEST)
+<br><pre>hello: 250-mailhub.eait.uq.edu.au Hello infs3202-d1804afb.zones.eait.uq.edu.au [172.23.81.53], pleased to meet you
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-8BITMIME
+250-SIZE 67108864
+250-DSN
+250-ETRN
+250-STARTTLS
+250-DELIVERBY
+250 HELP
+</pre><pre>from: 250 2.1.0 <jing.yang3@uqconnect.edu.au>... Sender ok
+</pre><pre>to: 250 2.1.5 <yangjing221@hotmail.com>... Recipient ok
+</pre><pre>data: 354 Enter mail, end with "." on a line by itself
+</pre><br><pre>quit: 250 2.0.0 33Q4b4wv006121 Message accepted for delivery
+</pre>The following SMTP error was encountered: 250 2.0.0 33Q4b4wv006121 Message accepted for delivery
+<br>The following SMTP error was encountered: <br>Unable to send email using SMTP. Your server might not be configured to send mail using this method.<br><pre>Date: Wed, 26 Apr 2023 04:37:01 +0000
+From: &quot;Coffee Sensation&quot; &lt;jing.yang3@uqconnect.edu.au&gt;
+Return-Path: &lt;jing.yang3@uqconnect.edu.au&gt;
+To: yangjing221@hotmail.com
+Subject: =?UTF-8?Q?Verify=20Email?=
+Reply-To: &lt;jing.yang3@uqconnect.edu.au&gt;
+User-Agent: CodeIgniter
+X-Sender: jing.yang3@uqconnect.edu.au
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;6448aa6d7b7552.73461441@uqconnect.edu.au&gt;
+Mime-Version: 1.0
+
+
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Thank you for signing up. Please click the link below to verify your email:
+
+https://infs3202-d1804afb.uqcloud.net/coffee/verify-email?token=9fb7c64956f9ff0808264df8e6fd6626e9164e4d5e654509b5b231959d7bebcf
+</pre>
+in APPPATH/Controllers/EmailController.php on line 36.
+ 1 APPPATH/Controllers/Signup.php(50): App\Controllers\EmailController->sendVerification()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Signup->register()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-26 04:41:47 --> Call to undefined method App\Models\CourseModel::getTeaching
+in SYSTEMPATH/Model.php on line 842.
+ 1 APPPATH/Controllers/Teach.php(13): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Teach->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-26 04:46:38 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH/Controllers/Teach.php(44): CodeIgniter\HTTP\Files\UploadedFile->move()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Teach->create_course()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-26 04:51:00 --> mysqli_sql_exception: Unknown column 'id' in 'order clause' in /var/www/htdocs/coffee/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/coffee/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/coffee/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/coffee/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/coffee/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/coffee/app/Models/CourseModel.php(51): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/htdocs/coffee/app/Controllers/Home.php(10): App\Models\CourseModel->getAllCourse()
+#6 /var/www/htdocs/coffee/system/CodeIgniter.php(934): App\Controllers\Home->index()
+#7 /var/www/htdocs/coffee/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/htdocs/coffee/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/htdocs/coffee/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-26 04:51:00 --> Unknown column 'id' in 'order clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/CourseModel.php(51): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/Home.php(10): App\Models\CourseModel->getAllCourse()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-26 10:59:58 --> Undefined array key "email_token"
+in APPPATH/Controllers/Signup.php on line 53.
+ 1 APPPATH/Controllers/Signup.php(53): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Signup->register()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-26 11:00:27 --> Too few arguments to function App\Models\UserModel::createUser(), 4 passed in /var/www/htdocs/coffee/app/Controllers/Signup.php on line 53 and exactly 5 expected
+in APPPATH/Models/UserModel.php on line 31.
+ 1 APPPATH/Controllers/Signup.php(53): App\Models\UserModel->createUser()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Signup->register()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-26 11:02:38 --> Undefined variable $toekn
+in APPPATH/Models/UserModel.php on line 39.
+ 1 APPPATH/Models/UserModel.php(39): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Signup.php(53): App\Models\UserModel->createUser()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Signup->register()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-26 11:54:43 --> Undefined variable $session
+in APPPATH/Controllers/Signup.php on line 57.
+ 1 APPPATH/Controllers/Signup.php(57): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Signup->register()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-26 11:55:58 --> Undefined variable $email
+in APPPATH/Controllers/Signup.php on line 60.
+ 1 APPPATH/Controllers/Signup.php(60): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Signup->register()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,100 @@
+CRITICAL - 2023-04-22 09:49:51 --> Call to undefined function App\Controllers\get()
+in APPPATH/Controllers/Teach.php on line 19.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Teach->create_course()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-22 09:51:07 --> Call to a member function move() on null
+in APPPATH/Controllers/Teach.php on line 23.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Teach->create_course()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-22 09:51:53 --> Call to a member function move() on null
+in APPPATH/Controllers/Teach.php on line 23.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Teach->create_course()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-22 09:53:00 --> Could not move file "phpDtmdqV" to "/var/www/htdocs/coffee/writable/uploads/courses/". Reason: 
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 149.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed()
+ 2 APPPATH/Controllers/Teach.php(23): CodeIgniter\HTTP\Files\UploadedFile->move()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Teach->create_course()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-22 09:57:26 --> Call to undefined method App\Models\CourseModel::create_course
+in SYSTEMPATH/Model.php on line 842.
+ 1 APPPATH/Controllers/Teach.php(25): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Teach->create_course()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-22 09:58:06 --> Undefined variable $description
+in APPPATH/Models/CourseModel.php on line 29.
+ 1 APPPATH/Models/CourseModel.php(29): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Teach.php(25): App\Models\CourseModel->createCourse()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Teach->create_course()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-22 09:58:48 --> Undefined variable $description
+in APPPATH/Models/CourseModel.php on line 29.
+ 1 APPPATH/Models/CourseModel.php(29): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Teach.php(25): App\Models\CourseModel->createCourse()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Teach->create_course()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-22 09:59:37 --> mysqli_sql_exception: Column 'teacher' cannot be null in /var/www/htdocs/coffee/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/coffee/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/coffee/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/coffee/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/coffee/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/coffee/app/Models/CourseModel.php(32): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/htdocs/coffee/app/Controllers/Teach.php(25): App\Models\CourseModel->createCourse()
+#6 /var/www/htdocs/coffee/system/CodeIgniter.php(934): App\Controllers\Teach->create_course()
+#7 /var/www/htdocs/coffee/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/htdocs/coffee/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/htdocs/coffee/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-22 09:59:37 --> Column 'teacher' cannot be null
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/CourseModel.php(32): CodeIgniter\Database\BaseBuilder->insert()
+ 3 APPPATH/Controllers/Teach.php(25): App\Models\CourseModel->createCourse()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Teach->create_course()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-22 10:07:37 --> mysqli_sql_exception: Duplicate entry '0' for key 'courses.PRIMARY' in /var/www/htdocs/coffee/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/coffee/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/coffee/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/coffee/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/coffee/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/coffee/app/Models/CourseModel.php(32): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/htdocs/coffee/app/Controllers/Teach.php(25): App\Models\CourseModel->createCourse()
+#6 /var/www/htdocs/coffee/system/CodeIgniter.php(934): App\Controllers\Teach->create_course()
+#7 /var/www/htdocs/coffee/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/htdocs/coffee/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/htdocs/coffee/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-22 10:07:37 --> Duplicate entry '0' for key 'courses.PRIMARY'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/CourseModel.php(32): CodeIgniter\Database\BaseBuilder->insert()
+ 3 APPPATH/Controllers/Teach.php(25): App\Models\CourseModel->createCourse()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Teach->create_course()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-22 10:09:52 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::insertID()
+in APPPATH/Models/CourseModel.php on line 33.
+ 1 APPPATH/Controllers/Teach.php(25): App\Models\CourseModel->createCourse()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Teach->create_course()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

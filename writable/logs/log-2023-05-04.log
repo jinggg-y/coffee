@@ -1,0 +1,91 @@
+CRITICAL - 2023-05-04 22:33:25 --> File not found: "coffee sensation_1.jpg"
+in SYSTEMPATH/Files/File.php on line 47.
+ 1 SYSTEMPATH/Files/File.php(47): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound()
+ 2 SYSTEMPATH/Images/Handlers/BaseHandler.php(148): CodeIgniter\Files\File->__construct()
+ 3 APPPATH/Models/ImageModel.php(10): CodeIgniter\Images\Handlers\BaseHandler->withFile()
+ 4 APPPATH/Controllers/Teach.php(48): App\Models\ImageModel->crop_image()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Teach->create_course()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-04 22:38:11 --> File not found: "uploads/courses/coffee sensation_2.jpg"
+in SYSTEMPATH/Files/File.php on line 47.
+ 1 SYSTEMPATH/Files/File.php(47): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound()
+ 2 SYSTEMPATH/Images/Handlers/BaseHandler.php(148): CodeIgniter\Files\File->__construct()
+ 3 APPPATH/Models/ImageModel.php(10): CodeIgniter\Images\Handlers\BaseHandler->withFile()
+ 4 APPPATH/Controllers/Teach.php(48): App\Models\ImageModel->crop_image()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Teach->create_course()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-04 22:38:29 --> File not found: "uploads/courses/coffee sensation_3.jpg"
+in SYSTEMPATH/Files/File.php on line 47.
+ 1 SYSTEMPATH/Files/File.php(47): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound()
+ 2 SYSTEMPATH/Images/Handlers/BaseHandler.php(148): CodeIgniter\Files\File->__construct()
+ 3 APPPATH/Models/ImageModel.php(10): CodeIgniter\Images\Handlers\BaseHandler->withFile()
+ 4 APPPATH/Controllers/Teach.php(48): App\Models\ImageModel->crop_image()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Teach->create_course()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-04 22:39:12 --> File not found: "writable/uploads/courses/coffee sensation_4.jpg"
+in SYSTEMPATH/Files/File.php on line 47.
+ 1 SYSTEMPATH/Files/File.php(47): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound()
+ 2 SYSTEMPATH/Images/Handlers/BaseHandler.php(148): CodeIgniter\Files\File->__construct()
+ 3 APPPATH/Models/ImageModel.php(10): CodeIgniter\Images\Handlers\BaseHandler->withFile()
+ 4 APPPATH/Controllers/Teach.php(48): App\Models\ImageModel->crop_image()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Teach->create_course()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-04 22:39:23 --> File not found: "/writable/uploads/courses/coffee sensation_5.jpg"
+in SYSTEMPATH/Files/File.php on line 47.
+ 1 SYSTEMPATH/Files/File.php(47): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound()
+ 2 SYSTEMPATH/Images/Handlers/BaseHandler.php(148): CodeIgniter\Files\File->__construct()
+ 3 APPPATH/Models/ImageModel.php(10): CodeIgniter\Images\Handlers\BaseHandler->withFile()
+ 4 APPPATH/Controllers/Teach.php(48): App\Models\ImageModel->crop_image()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Teach->create_course()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-04 22:40:21 --> File not found: "https://infs3202-d1804afb.uqcloud.net/coffee//writable/uploads/courses/coffee sensation_6.jpg"
+in SYSTEMPATH/Files/File.php on line 47.
+ 1 SYSTEMPATH/Files/File.php(47): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound()
+ 2 SYSTEMPATH/Images/Handlers/BaseHandler.php(148): CodeIgniter\Files\File->__construct()
+ 3 APPPATH/Models/ImageModel.php(10): CodeIgniter\Images\Handlers\BaseHandler->withFile()
+ 4 APPPATH/Controllers/Teach.php(48): App\Models\ImageModel->crop_image()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Teach->create_course()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-04 22:40:31 --> File not found: "https://infs3202-d1804afb.uqcloud.net/coffee/writable/uploads/courses/coffee sensation_7.jpg"
+in SYSTEMPATH/Files/File.php on line 47.
+ 1 SYSTEMPATH/Files/File.php(47): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound()
+ 2 SYSTEMPATH/Images/Handlers/BaseHandler.php(148): CodeIgniter\Files\File->__construct()
+ 3 APPPATH/Models/ImageModel.php(10): CodeIgniter\Images\Handlers\BaseHandler->withFile()
+ 4 APPPATH/Controllers/Teach.php(48): App\Models\ImageModel->crop_image()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Teach->create_course()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-04 22:43:48 --> Division by zero
+in APPPATH/Models/ImageModel.php on line 18.
+ 1 APPPATH/Controllers/Teach.php(48): App\Models\ImageModel->crop_image()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Teach->create_course()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-04 22:45:33 --> Division by zero
+in APPPATH/Models/ImageModel.php on line 18.
+ 1 APPPATH/Controllers/Teach.php(48): App\Models\ImageModel->crop_image()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Teach->create_course()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-04 22:46:09 --> Division by zero
+in APPPATH/Models/ImageModel.php on line 16.
+ 1 APPPATH/Controllers/Teach.php(48): App\Models\ImageModel->crop_image()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Teach->create_course()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

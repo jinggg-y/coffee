@@ -1,0 +1,11 @@
+CRITICAL - 2023-05-13 10:03:08 --> Undefined variable $course
+in APPPATH/Views/content.php on line 44.
+ 1 APPPATH/Views/content.php(44): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/content.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Teach.php(95): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Teach->teach_item_index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

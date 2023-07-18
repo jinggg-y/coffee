@@ -1,0 +1,58 @@
+CRITICAL - 2023-05-03 04:37:46 --> syntax error, unexpected token "public", expecting end of file
+in APPPATH/Controllers/Login.php on line 64.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/CodeIgniter.php(892): class_exists()
+ 5 SYSTEMPATH/CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 05:27:22 --> Attempt to read property "id" on array
+in APPPATH/Controllers/Login.php on line 84.
+ 1 APPPATH/Controllers/Login.php(84): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->redirect_resetPassword()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-03 05:28:54 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-05-03 05:28:54 --> 
+hello: 220 mailhub.eait.uq.edu.au ESMTP Sendmail 8.15.1/8.15.1; Wed, 3 May 2023 15:28:54 +1000 (AEST)
+
+The following SMTP error was encountered: 220 mailhub.eait.uq.edu.au ESMTP Sendmail 8.15.1/8.15.1; Wed, 3 May 2023 15:28:54 +1000 (AEST)
+
+CRITICAL - 2023-05-03 05:28:54 --> Error sending email: <br><pre>hello: 220 mailhub.eait.uq.edu.au ESMTP Sendmail 8.15.1/8.15.1; Wed, 3 May 2023 15:28:54 +1000 (AEST)
+</pre>The following SMTP error was encountered: 220 mailhub.eait.uq.edu.au ESMTP Sendmail 8.15.1/8.15.1; Wed, 3 May 2023 15:28:54 +1000 (AEST)
+<br>Unable to send email using SMTP. Your server might not be configured to send mail using this method.<br><pre>Date: Wed, 3 May 2023 05:28:48 +0000
+From: &quot;Coffee Sensation&quot; &lt;jing.yang3@uqconnect.edu.au&gt;
+Return-Path: &lt;jing.yang3@uqconnect.edu.au&gt;
+To: y.dianna.j@gmail.com
+Subject: =?UTF-8?Q?Reset=20Password?=
+Reply-To: &lt;jing.yang3@uqconnect.edu.au&gt;
+User-Agent: CodeIgniter
+X-Sender: jing.yang3@uqconnect.edu.au
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;6451f1104fa9c0.85639807@uqconnect.edu.au&gt;
+Mime-Version: 1.0
+
+
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Here is your password reset link:
+
+https://infs3202-d1804afb.uqcloud.net/coffee/reset-password?token=0dce9e49e5203c8a1cc7568d7ea8723983404214fbf116fbf581297f4b074a36
+</pre>
+in APPPATH/Controllers/EmailController.php on line 63.
+ 1 APPPATH/Controllers/Login.php(69): App\Controllers\EmailController->sendPassReset()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->email_forgotpassword()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 12:25:30 --> view(): Argument #2 ($data) must be of type array, string given, called in /var/www/htdocs/coffee/app/Controllers/Login.php on line 81
+in SYSTEMPATH/Common.php on line 1172.
+ 1 APPPATH/Controllers/Login.php(81): view()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->redirect_resetPassword()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

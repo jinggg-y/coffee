@@ -1,0 +1,30 @@
+ERROR - 2023-05-15 11:43:52 --> mysqli_sql_exception: Column 'review' cannot be null in /var/www/htdocs/coffee/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/coffee/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/coffee/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/coffee/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/coffee/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/coffee/app/Models/ReviewModel.php(36): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/htdocs/coffee/app/Controllers/Teach.php(107): App\Models\ReviewModel->createComment()
+#6 /var/www/htdocs/coffee/system/CodeIgniter.php(934): App\Controllers\Teach->comment()
+#7 /var/www/htdocs/coffee/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/htdocs/coffee/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/htdocs/coffee/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-15 11:43:52 --> Column 'review' cannot be null
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/ReviewModel.php(36): CodeIgniter\Database\BaseBuilder->insert()
+ 3 APPPATH/Controllers/Teach.php(107): App\Models\ReviewModel->createComment()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Teach->comment()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-15 11:53:40 --> Undefined variable $1
+in APPPATH/Models/CourseModel.php on line 62.
+ 1 APPPATH/Models/CourseModel.php(62): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Teach.php(106): App\Models\CourseModel->updateCourse()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Teach->updateCourse()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

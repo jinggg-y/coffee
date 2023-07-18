@@ -1,0 +1,22 @@
+CRITICAL - 2023-05-10 02:31:55 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: "\App\Controllers\Teach/teach_item_index/$1"
+in SYSTEMPATH/Router/Router.php on line 474.
+ 1 SYSTEMPATH/Router/Router.php(474): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName()
+ 2 SYSTEMPATH/Router/Router.php(182): CodeIgniter\Router\Router->checkRoutes()
+ 3 SYSTEMPATH/CodeIgniter.php(815): CodeIgniter\Router\Router->handle()
+ 4 SYSTEMPATH/CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 02:32:14 --> A dynamic controller is not allowed for security reasons. Route handler: "\App\Controllers\Teach\teach_item_index\$1"
+in SYSTEMPATH/Router/Router.php on line 480.
+ 1 SYSTEMPATH/Router/Router.php(480): CodeIgniter\Router\Exceptions\RouterException::forDynamicController()
+ 2 SYSTEMPATH/Router/Router.php(182): CodeIgniter\Router\Router->checkRoutes()
+ 3 SYSTEMPATH/CodeIgniter.php(815): CodeIgniter\Router\Router->handle()
+ 4 SYSTEMPATH/CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 02:32:36 --> Too few arguments to function App\Controllers\Teach::teach_item_index(), 0 passed in /var/www/htdocs/coffee/system/CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH/Controllers/Teach.php on line 70.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Teach->teach_item_index()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,11 @@
+CRITICAL - 2023-05-07 05:51:27 --> Undefined array key "courseid"
+in APPPATH/Views/components/teach_item.php on line 7.
+ 1 APPPATH/Views/components/teach_item.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/components/teach_item.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Teach.php(19): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Teach->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

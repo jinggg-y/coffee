@@ -1,0 +1,72 @@
+CRITICAL - 2023-05-05 01:38:01 --> Division by zero
+in APPPATH/Models/ImageModel.php on line 17.
+ 1 APPPATH/Controllers/Teach.php(48): App\Models\ImageModel->crop_image()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Teach->create_course()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-05 01:38:26 --> Division by zero
+in APPPATH/Models/ImageModel.php on line 17.
+ 1 APPPATH/Controllers/Teach.php(48): App\Models\ImageModel->crop_image()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Teach->create_course()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-05 01:40:41 --> Division by zero
+in APPPATH/Models/ImageModel.php on line 17.
+ 1 APPPATH/Controllers/Teach.php(48): App\Models\ImageModel->crop_image()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Teach->create_course()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-05 01:46:44 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /var/www/htdocs/coffee/app/Models/ImageModel.php on line 13
+in SYSTEMPATH/Common.php on line 801.
+ 1 APPPATH/Models/ImageModel.php(13): log_message()
+ 2 APPPATH/Controllers/Teach.php(48): App\Models\ImageModel->crop_image()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Teach->create_course()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-05 01:53:04 --> Division by zero
+in APPPATH/Models/ImageModel.php on line 29.
+ 1 APPPATH/Controllers/Teach.php(48): App\Models\ImageModel->crop_image()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Teach->create_course()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-05 01:54:32 --> Division by zero
+in APPPATH/Models/ImageModel.php on line 21.
+ 1 APPPATH/Controllers/Teach.php(48): App\Models\ImageModel->crop_image()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Teach->create_course()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-05 01:55:12 --> Division by zero
+in APPPATH/Models/ImageModel.php on line 21.
+ 1 APPPATH/Controllers/Teach.php(48): App\Models\ImageModel->crop_image()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Teach->create_course()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-05 01:55:18 --> mysqli_sql_exception: Column 'img' cannot be null in /var/www/htdocs/coffee/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/coffee/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/coffee/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/coffee/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/coffee/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/coffee/app/Models/CourseModel.php(33): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/htdocs/coffee/app/Controllers/Teach.php(49): App\Models\CourseModel->createCourse()
+#6 /var/www/htdocs/coffee/system/CodeIgniter.php(934): App\Controllers\Teach->create_course()
+#7 /var/www/htdocs/coffee/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/htdocs/coffee/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/htdocs/coffee/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-05 01:55:18 --> Column 'img' cannot be null
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/CourseModel.php(33): CodeIgniter\Database\BaseBuilder->insert()
+ 3 APPPATH/Controllers/Teach.php(49): App\Models\CourseModel->createCourse()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Teach->create_course()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

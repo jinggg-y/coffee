@@ -1,0 +1,505 @@
+ERROR - 2023-04-23 05:38:40 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:141A318A:SSL routines:tls_process_ske_dhe:dh key too small in /var/www/htdocs/coffee/system/Email/Email.php:1883
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/htdocs/coffee/system/Email/Email.php(1883): stream_socket_enable_crypto()
+#2 /var/www/htdocs/coffee/system/Email/Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 /var/www/htdocs/coffee/system/Email/Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /var/www/htdocs/coffee/system/Email/Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 /var/www/htdocs/coffee/app/Models/EmailModel.php(34): CodeIgniter\Email\Email->send()
+#6 /var/www/htdocs/coffee/app/Controllers/Signup.php(51): App\Models\EmailModel->sendVerification()
+#7 /var/www/htdocs/coffee/system/CodeIgniter.php(934): App\Controllers\Signup->register()
+#8 /var/www/htdocs/coffee/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/htdocs/coffee/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/htdocs/coffee/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-04-23 05:38:40 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-23 05:38:40 --> 220 mailhub.eait.uq.edu.au ESMTP Sendmail 8.15.1/8.15.1; Sun, 23 Apr 2023 15:38:40 +1000 (AEST)
+
+hello: 250-mailhub.eait.uq.edu.au Hello infs3202-d1804afb.zones.eait.uq.edu.au [172.23.81.53], pleased to meet you
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-8BITMIME
+250-SIZE 67108864
+250-DSN
+250-ETRN
+250-STARTTLS
+250-DELIVERBY
+250 HELP
+
+starttls: 220 2.0.0 Ready to start TLS
+
+CRITICAL - 2023-04-23 05:38:40 --> Error sending email: 220 mailhub.eait.uq.edu.au ESMTP Sendmail 8.15.1/8.15.1; Sun, 23 Apr 2023 15:38:40 +1000 (AEST)
+<br><pre>hello: 250-mailhub.eait.uq.edu.au Hello infs3202-d1804afb.zones.eait.uq.edu.au [172.23.81.53], pleased to meet you
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-8BITMIME
+250-SIZE 67108864
+250-DSN
+250-ETRN
+250-STARTTLS
+250-DELIVERBY
+250 HELP
+</pre><pre>starttls: 220 2.0.0 Ready to start TLS
+</pre>Unable to send email using SMTP. Your server might not be configured to send mail using this method.<br><pre>Date: Sun, 23 Apr 2023 05:38:40 +0000
+From: &quot;Coffee Sensation&quot; &lt;jing.yang3@uq.connect.edu.au&gt;
+Return-Path: &lt;jing.yang3@uq.connect.edu.au&gt;
+To: y.dianna.j@gmail.com
+Subject: =?UTF-8?Q?Verify=20Email?=
+Reply-To: &lt;jing.yang3@uq.connect.edu.au&gt;
+User-Agent: CodeIgniter
+X-Sender: jing.yang3@uq.connect.edu.au
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;6444c46048c617.35219503@uq.connect.edu.au&gt;
+Mime-Version: 1.0
+
+
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Thank you for signing up for Example App. Please click the link below to
+verify your email:
+
+https://infs3202-d1804afb.uqcloud.net/coffee//verify-email?token=3eb06549e9f9e1b5f4d071897e308ad5122521be7ab692b2dd8f42b62c48093a
+</pre>
+in APPPATH/Models/EmailModel.php on line 35.
+ 1 APPPATH/Controllers/Signup.php(51): App\Models\EmailModel->sendVerification()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Signup->register()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-23 05:45:06 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:141A318A:SSL routines:tls_process_ske_dhe:dh key too small in /var/www/htdocs/coffee/system/Email/Email.php:1883
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/htdocs/coffee/system/Email/Email.php(1883): stream_socket_enable_crypto()
+#2 /var/www/htdocs/coffee/system/Email/Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 /var/www/htdocs/coffee/system/Email/Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /var/www/htdocs/coffee/system/Email/Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 /var/www/htdocs/coffee/app/Models/EmailModel.php(34): CodeIgniter\Email\Email->send()
+#6 /var/www/htdocs/coffee/app/Controllers/Signup.php(51): App\Models\EmailModel->sendVerification()
+#7 /var/www/htdocs/coffee/system/CodeIgniter.php(934): App\Controllers\Signup->register()
+#8 /var/www/htdocs/coffee/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/htdocs/coffee/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/htdocs/coffee/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-04-23 05:45:06 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-23 05:45:06 --> 220 mailhub.eait.uq.edu.au ESMTP Sendmail 8.15.1/8.15.1; Sun, 23 Apr 2023 15:45:06 +1000 (AEST)
+
+hello: 250-mailhub.eait.uq.edu.au Hello infs3202-d1804afb.zones.eait.uq.edu.au [172.23.81.53], pleased to meet you
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-8BITMIME
+250-SIZE 67108864
+250-DSN
+250-ETRN
+250-STARTTLS
+250-DELIVERBY
+250 HELP
+
+starttls: 220 2.0.0 Ready to start TLS
+
+CRITICAL - 2023-04-23 05:45:06 --> Error sending email: 220 mailhub.eait.uq.edu.au ESMTP Sendmail 8.15.1/8.15.1; Sun, 23 Apr 2023 15:45:06 +1000 (AEST)
+<br><pre>hello: 250-mailhub.eait.uq.edu.au Hello infs3202-d1804afb.zones.eait.uq.edu.au [172.23.81.53], pleased to meet you
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-8BITMIME
+250-SIZE 67108864
+250-DSN
+250-ETRN
+250-STARTTLS
+250-DELIVERBY
+250 HELP
+</pre><pre>starttls: 220 2.0.0 Ready to start TLS
+</pre>Unable to send email using SMTP. Your server might not be configured to send mail using this method.<br><pre>Date: Sun, 23 Apr 2023 05:45:06 +0000
+From: &quot;Coffee Sensation&quot; &lt;jing.yang3@uqconnect.edu.au&gt;
+Return-Path: &lt;jing.yang3@uqconnect.edu.au&gt;
+To: y.dianna.j@gmail.com
+Subject: =?UTF-8?Q?Verify=20Email?=
+Reply-To: &lt;jing.yang3@uqconnect.edu.au&gt;
+User-Agent: CodeIgniter
+X-Sender: jing.yang3@uqconnect.edu.au
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;6444c5e26919a6.84168150@uqconnect.edu.au&gt;
+Mime-Version: 1.0
+
+
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Thank you for signing up for Example App. Please click the link below to
+verify your email:
+
+https://infs3202-d1804afb.uqcloud.net/coffee//verify-email?token=ba8d7a4c0ccd1ca6362dd9904b954b32e60b37bd4abb4276072fd4146283fee6
+</pre>
+in APPPATH/Models/EmailModel.php on line 35.
+ 1 APPPATH/Controllers/Signup.php(51): App\Models\EmailModel->sendVerification()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Signup->register()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-23 05:45:27 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:141A318A:SSL routines:tls_process_ske_dhe:dh key too small in /var/www/htdocs/coffee/system/Email/Email.php:1883
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/htdocs/coffee/system/Email/Email.php(1883): stream_socket_enable_crypto()
+#2 /var/www/htdocs/coffee/system/Email/Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 /var/www/htdocs/coffee/system/Email/Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /var/www/htdocs/coffee/system/Email/Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 /var/www/htdocs/coffee/app/Models/EmailModel.php(34): CodeIgniter\Email\Email->send()
+#6 /var/www/htdocs/coffee/app/Controllers/Signup.php(51): App\Models\EmailModel->sendVerification()
+#7 /var/www/htdocs/coffee/system/CodeIgniter.php(934): App\Controllers\Signup->register()
+#8 /var/www/htdocs/coffee/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/htdocs/coffee/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/htdocs/coffee/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-04-23 05:45:27 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-23 05:45:27 --> 220 mailhub.eait.uq.edu.au ESMTP Sendmail 8.15.1/8.15.1; Sun, 23 Apr 2023 15:45:27 +1000 (AEST)
+
+hello: 250-mailhub.eait.uq.edu.au Hello infs3202-d1804afb.zones.eait.uq.edu.au [172.23.81.53], pleased to meet you
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-8BITMIME
+250-SIZE 67108864
+250-DSN
+250-ETRN
+250-STARTTLS
+250-DELIVERBY
+250 HELP
+
+starttls: 220 2.0.0 Ready to start TLS
+
+CRITICAL - 2023-04-23 05:45:27 --> Error sending email: 220 mailhub.eait.uq.edu.au ESMTP Sendmail 8.15.1/8.15.1; Sun, 23 Apr 2023 15:45:27 +1000 (AEST)
+<br><pre>hello: 250-mailhub.eait.uq.edu.au Hello infs3202-d1804afb.zones.eait.uq.edu.au [172.23.81.53], pleased to meet you
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-8BITMIME
+250-SIZE 67108864
+250-DSN
+250-ETRN
+250-STARTTLS
+250-DELIVERBY
+250 HELP
+</pre><pre>starttls: 220 2.0.0 Ready to start TLS
+</pre>Unable to send email using SMTP. Your server might not be configured to send mail using this method.<br><pre>Date: Sun, 23 Apr 2023 05:45:27 +0000
+From: &quot;Coffee Sensation&quot; &lt;jing.yang3@uqconnect.edu.au&gt;
+Return-Path: &lt;jing.yang3@uqconnect.edu.au&gt;
+To: y.dianna.j@gmail.com
+Subject: =?UTF-8?Q?Verify=20Email?=
+Reply-To: &lt;jing.yang3@uqconnect.edu.au&gt;
+User-Agent: CodeIgniter
+X-Sender: jing.yang3@uqconnect.edu.au
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;6444c5f7860cb3.24905977@uqconnect.edu.au&gt;
+Mime-Version: 1.0
+
+
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Thank you for signing up for Example App. Please click the link below to
+verify your email:
+
+https://infs3202-d1804afb.uqcloud.net/coffee//verify-email?token=a1dec7df27083d78a96e5a9fba733a45df0c219bab9c2d4891fe02759262ae99
+</pre>
+in APPPATH/Models/EmailModel.php on line 35.
+ 1 APPPATH/Controllers/Signup.php(51): App\Models\EmailModel->sendVerification()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Signup->register()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-23 05:52:47 --> Undefined variable $emailConf
+in APPPATH/Models/EmailModel.php on line 23.
+ 1 APPPATH/Models/EmailModel.php(23): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Signup.php(34): App\Models\EmailModel->__construct()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Signup->register()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-23 05:54:15 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:141A318A:SSL routines:tls_process_ske_dhe:dh key too small in /var/www/htdocs/coffee/system/Email/Email.php:1883
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/htdocs/coffee/system/Email/Email.php(1883): stream_socket_enable_crypto()
+#2 /var/www/htdocs/coffee/system/Email/Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 /var/www/htdocs/coffee/system/Email/Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /var/www/htdocs/coffee/system/Email/Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 /var/www/htdocs/coffee/app/Models/EmailModel.php(42): CodeIgniter\Email\Email->send()
+#6 /var/www/htdocs/coffee/app/Controllers/Signup.php(51): App\Models\EmailModel->sendVerification()
+#7 /var/www/htdocs/coffee/system/CodeIgniter.php(934): App\Controllers\Signup->register()
+#8 /var/www/htdocs/coffee/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/htdocs/coffee/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/htdocs/coffee/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-04-23 05:54:15 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-23 05:54:15 --> 220 mailhub.eait.uq.edu.au ESMTP Sendmail 8.15.1/8.15.1; Sun, 23 Apr 2023 15:54:15 +1000 (AEST)
+
+hello: 250-mailhub.eait.uq.edu.au Hello infs3202-d1804afb.zones.eait.uq.edu.au [172.23.81.53], pleased to meet you
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-8BITMIME
+250-SIZE 67108864
+250-DSN
+250-ETRN
+250-STARTTLS
+250-DELIVERBY
+250 HELP
+
+starttls: 220 2.0.0 Ready to start TLS
+
+CRITICAL - 2023-04-23 05:54:15 --> Error sending email: 220 mailhub.eait.uq.edu.au ESMTP Sendmail 8.15.1/8.15.1; Sun, 23 Apr 2023 15:54:15 +1000 (AEST)
+<br><pre>hello: 250-mailhub.eait.uq.edu.au Hello infs3202-d1804afb.zones.eait.uq.edu.au [172.23.81.53], pleased to meet you
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-8BITMIME
+250-SIZE 67108864
+250-DSN
+250-ETRN
+250-STARTTLS
+250-DELIVERBY
+250 HELP
+</pre><pre>starttls: 220 2.0.0 Ready to start TLS
+</pre>Unable to send email using SMTP. Your server might not be configured to send mail using this method.<br><pre>Date: Sun, 23 Apr 2023 05:54:15 +0000
+From: &quot;Coffee Sensation&quot; &lt;jing.yang3@uqconnect.edu.au&gt;
+Return-Path: &lt;jing.yang3@uqconnect.edu.au&gt;
+To: y.dianna.j@gmail.com
+Subject: =?UTF-8?Q?Verify=20Email?=
+Reply-To: &lt;jing.yang3@uqconnect.edu.au&gt;
+User-Agent: CodeIgniter
+X-Sender: jing.yang3@uqconnect.edu.au
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;6444c8079431c0.74541714@uqconnect.edu.au&gt;
+Mime-Version: 1.0
+
+
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Thank you for signing up for Example App. Please click the link below to
+verify your email:
+
+https://infs3202-d1804afb.uqcloud.net/coffee//verify-email?token=fdab31e7a651e6035957db57e191b0f50e49daee0e8f56473ad69854deecc63a
+</pre>
+in APPPATH/Models/EmailModel.php on line 43.
+ 1 APPPATH/Controllers/Signup.php(51): App\Models\EmailModel->sendVerification()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Signup->register()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-23 06:03:46 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:141A318A:SSL routines:tls_process_ske_dhe:dh key too small in /var/www/htdocs/coffee/system/Email/Email.php:1883
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/htdocs/coffee/system/Email/Email.php(1883): stream_socket_enable_crypto()
+#2 /var/www/htdocs/coffee/system/Email/Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 /var/www/htdocs/coffee/system/Email/Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /var/www/htdocs/coffee/system/Email/Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 /var/www/htdocs/coffee/app/Models/EmailModel.php(42): CodeIgniter\Email\Email->send()
+#6 /var/www/htdocs/coffee/app/Controllers/Signup.php(51): App\Models\EmailModel->sendVerification()
+#7 /var/www/htdocs/coffee/system/CodeIgniter.php(934): App\Controllers\Signup->register()
+#8 /var/www/htdocs/coffee/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/htdocs/coffee/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/htdocs/coffee/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-04-23 06:03:46 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-23 06:03:46 --> 220 mailhub.eait.uq.edu.au ESMTP Sendmail 8.15.1/8.15.1; Sun, 23 Apr 2023 16:03:46 +1000 (AEST)
+
+hello: 250-mailhub.eait.uq.edu.au Hello infs3202-d1804afb.zones.eait.uq.edu.au [172.23.81.53], pleased to meet you
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-8BITMIME
+250-SIZE 67108864
+250-DSN
+250-ETRN
+250-STARTTLS
+250-DELIVERBY
+250 HELP
+
+starttls: 220 2.0.0 Ready to start TLS
+
+CRITICAL - 2023-04-23 06:03:46 --> Error sending email: 220 mailhub.eait.uq.edu.au ESMTP Sendmail 8.15.1/8.15.1; Sun, 23 Apr 2023 16:03:46 +1000 (AEST)
+<br><pre>hello: 250-mailhub.eait.uq.edu.au Hello infs3202-d1804afb.zones.eait.uq.edu.au [172.23.81.53], pleased to meet you
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-8BITMIME
+250-SIZE 67108864
+250-DSN
+250-ETRN
+250-STARTTLS
+250-DELIVERBY
+250 HELP
+</pre><pre>starttls: 220 2.0.0 Ready to start TLS
+</pre>Unable to send email using SMTP. Your server might not be configured to send mail using this method.<br><pre>Date: Sun, 23 Apr 2023 06:03:46 +0000
+From: &quot;Coffee Sensation&quot; &lt;s4562109-infs3202@uqcloud.net&gt;
+Return-Path: &lt;s4562109-infs3202@uqcloud.net&gt;
+To: y.dianna.j@gmail.com
+Subject: =?UTF-8?Q?Verify=20Email?=
+Reply-To: &lt;s4562109-infs3202@uqcloud.net&gt;
+User-Agent: CodeIgniter
+X-Sender: s4562109-infs3202@uqcloud.net
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;6444ca42215ce7.52588390@uqcloud.net&gt;
+Mime-Version: 1.0
+
+
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Thank you for signing up for Example App. Please click the link below to
+verify your email:
+
+https://infs3202-d1804afb.uqcloud.net/coffee//verify-email?token=a2698eb49b20f733c6d96afc171f8a7fcba9d797288ced4865f7e696cdfb68b9
+</pre>
+in APPPATH/Models/EmailModel.php on line 43.
+ 1 APPPATH/Controllers/Signup.php(51): App\Models\EmailModel->sendVerification()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Signup->register()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-23 06:04:16 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:141A318A:SSL routines:tls_process_ske_dhe:dh key too small in /var/www/htdocs/coffee/system/Email/Email.php:1883
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/htdocs/coffee/system/Email/Email.php(1883): stream_socket_enable_crypto()
+#2 /var/www/htdocs/coffee/system/Email/Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 /var/www/htdocs/coffee/system/Email/Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /var/www/htdocs/coffee/system/Email/Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 /var/www/htdocs/coffee/app/Models/EmailModel.php(42): CodeIgniter\Email\Email->send()
+#6 /var/www/htdocs/coffee/app/Controllers/Signup.php(51): App\Models\EmailModel->sendVerification()
+#7 /var/www/htdocs/coffee/system/CodeIgniter.php(934): App\Controllers\Signup->register()
+#8 /var/www/htdocs/coffee/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/htdocs/coffee/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/htdocs/coffee/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-04-23 06:04:16 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-23 06:04:16 --> 220 mailhub.eait.uq.edu.au ESMTP Sendmail 8.15.1/8.15.1; Sun, 23 Apr 2023 16:04:16 +1000 (AEST)
+
+hello: 250-mailhub.eait.uq.edu.au Hello infs3202-d1804afb.zones.eait.uq.edu.au [172.23.81.53], pleased to meet you
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-8BITMIME
+250-SIZE 67108864
+250-DSN
+250-ETRN
+250-STARTTLS
+250-DELIVERBY
+250 HELP
+
+starttls: 220 2.0.0 Ready to start TLS
+
+CRITICAL - 2023-04-23 06:04:16 --> Error sending email: 220 mailhub.eait.uq.edu.au ESMTP Sendmail 8.15.1/8.15.1; Sun, 23 Apr 2023 16:04:16 +1000 (AEST)
+<br><pre>hello: 250-mailhub.eait.uq.edu.au Hello infs3202-d1804afb.zones.eait.uq.edu.au [172.23.81.53], pleased to meet you
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-8BITMIME
+250-SIZE 67108864
+250-DSN
+250-ETRN
+250-STARTTLS
+250-DELIVERBY
+250 HELP
+</pre><pre>starttls: 220 2.0.0 Ready to start TLS
+</pre>Unable to send email using SMTP. Your server might not be configured to send mail using this method.<br><pre>Date: Sun, 23 Apr 2023 06:04:16 +0000
+From: &quot;Coffee Sensation&quot; &lt;s4562109-infs3202@uqcloud.net&gt;
+Return-Path: &lt;s4562109-infs3202@uqcloud.net&gt;
+To: y.dianna.j@gmail.com
+Subject: =?UTF-8?Q?Verify=20Email?=
+Reply-To: &lt;s4562109-infs3202@uqcloud.net&gt;
+User-Agent: CodeIgniter
+X-Sender: s4562109-infs3202@uqcloud.net
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;6444ca60547402.88772968@uqcloud.net&gt;
+Mime-Version: 1.0
+
+
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Thank you for signing up for Example App. Please click the link below to
+verify your email:
+
+https://infs3202-d1804afb.uqcloud.net/coffee//verify-email?token=e9bc628151999f3f8c1e2b0b507f64ff449c0e20dcf1570faec6f6ce02ff6225
+</pre>
+in APPPATH/Models/EmailModel.php on line 43.
+ 1 APPPATH/Controllers/Signup.php(51): App\Models\EmailModel->sendVerification()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Signup->register()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-23 06:05:47 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:141A318A:SSL routines:tls_process_ske_dhe:dh key too small in /var/www/htdocs/coffee/system/Email/Email.php:1883
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/htdocs/coffee/system/Email/Email.php(1883): stream_socket_enable_crypto()
+#2 /var/www/htdocs/coffee/system/Email/Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 /var/www/htdocs/coffee/system/Email/Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /var/www/htdocs/coffee/system/Email/Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 /var/www/htdocs/coffee/app/Models/EmailModel.php(42): CodeIgniter\Email\Email->send()
+#6 /var/www/htdocs/coffee/app/Controllers/Signup.php(51): App\Models\EmailModel->sendVerification()
+#7 /var/www/htdocs/coffee/system/CodeIgniter.php(934): App\Controllers\Signup->register()
+#8 /var/www/htdocs/coffee/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/htdocs/coffee/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/htdocs/coffee/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-04-23 06:05:47 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-23 06:05:47 --> 220 mailhub.eait.uq.edu.au ESMTP Sendmail 8.15.1/8.15.1; Sun, 23 Apr 2023 16:05:47 +1000 (AEST)
+
+hello: 250-mailhub.eait.uq.edu.au Hello infs3202-d1804afb.zones.eait.uq.edu.au [172.23.81.53], pleased to meet you
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-8BITMIME
+250-SIZE 67108864
+250-DSN
+250-ETRN
+250-STARTTLS
+250-DELIVERBY
+250 HELP
+
+starttls: 220 2.0.0 Ready to start TLS
+
+CRITICAL - 2023-04-23 06:05:47 --> Error sending email: 220 mailhub.eait.uq.edu.au ESMTP Sendmail 8.15.1/8.15.1; Sun, 23 Apr 2023 16:05:47 +1000 (AEST)
+<br><pre>hello: 250-mailhub.eait.uq.edu.au Hello infs3202-d1804afb.zones.eait.uq.edu.au [172.23.81.53], pleased to meet you
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-8BITMIME
+250-SIZE 67108864
+250-DSN
+250-ETRN
+250-STARTTLS
+250-DELIVERBY
+250 HELP
+</pre><pre>starttls: 220 2.0.0 Ready to start TLS
+</pre>Unable to send email using SMTP. Your server might not be configured to send mail using this method.<br><pre>Date: Sun, 23 Apr 2023 06:05:47 +0000
+From: &quot;Coffee Sensation&quot; &lt;s4562109@uqcloud.net&gt;
+Return-Path: &lt;s4562109@uqcloud.net&gt;
+To: y.dianna.j@gmail.com
+Subject: =?UTF-8?Q?Verify=20Email?=
+Reply-To: &lt;s4562109@uqcloud.net&gt;
+User-Agent: CodeIgniter
+X-Sender: s4562109@uqcloud.net
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;6444cabb4872e2.30599248@uqcloud.net&gt;
+Mime-Version: 1.0
+
+
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Thank you for signing up for Example App. Please click the link below to
+verify your email:
+
+https://infs3202-d1804afb.uqcloud.net/coffee//verify-email?token=0c1d8c3d22219f55ad1eec199401e7ffffd7b8ee63d2af2964526ad092e02530
+</pre>
+in APPPATH/Models/EmailModel.php on line 43.
+ 1 APPPATH/Controllers/Signup.php(51): App\Models\EmailModel->sendVerification()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Signup->register()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
