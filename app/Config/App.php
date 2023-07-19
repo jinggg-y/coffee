@@ -17,7 +17,7 @@ class App extends BaseConfig
      *
      *    http://example.com/
      */
-    public string $baseURL = 'https://infs3202-d1804afb.uqcloud.net/coffee/';
+    public string $baseURL = 'https://coffee-puce-seven.vercel.app/';
 
     /**
      * Allowed Hostnames in the Site URL other than the hostname in the baseURL.
